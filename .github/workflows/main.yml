@@ -27,9 +27,9 @@ jobs:
     - name: Deploy via SFTP
       uses: samuelmeuli/action-sftp-deploy@v2
       with:
-        username: ${{ secrets.CPANEL_USER }}      # cPanel username stored in GitHub secrets
-        server: ${{ secrets.CPANEL_SERVER }}      # cPanel server stored in GitHub secrets
-        port: '22'                                # or 21 for FTP
-        password: ${{ secrets.CPANEL_PASSWORD }}  # cPanel password stored in GitHub secrets
+        username: c9vp4d12fmgg      # cPanel username stored in GitHub secrets
+        server: ftp.chamberoflearning.com      # cPanel server stored in GitHub secrets
+        port: '21'                                # or 21 for FTP
+        password: TBQKuMtr%3Md  # cPanel password stored in GitHub secrets
         local-dir: build/
         remote-dir: /home/user/public_html/Dev       # cPanel directory where your app is hosted
